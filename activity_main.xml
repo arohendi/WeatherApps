@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1FBA88"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/matahari" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Weather apps"
+            android:textAlignment="center"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/sky">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tgl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today, April 02"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:layout_marginTop="30dp"
+            />
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:id="@+id/suhub"
+            android:layout_below="@+id/tgl"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:text="26˚"
+            android:textSize="90dp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:id="@+id/suhuk"
+            android:layout_width="116dp"
+            android:layout_height="92dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/suhub"
+            android:text="20˚"
+            android:textColor="@color/grey"
+            android:textSize="50dp"
+            android:layout_marginTop="20dp"/>
+        <ImageView
+            android:id="@+id/image"
+            android:layout_toRightOf="@+id/suhub"
+            android:layout_below="@+id/tgl"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="80dp"
+            android:background="@drawable/awanbesar"/>
+        <TextView
+            android:id="@+id/ketimg"
+            android:layout_below="@+id/image"
+            android:layout_toRightOf="@+id/suhuk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:text="Cloudy"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="70dp"/>
+        <TableLayout
+            android:id="@+id/table"
+            android:layout_below="@+id/ketimg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="">
+            <TableRow
+            <GridLayout
+                android:background="@color/deep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/awankecil"
+                    android:layout_margin="20dp"/>
+
+                <TextView
+                    android:layout_marginLeft="70dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12:00"
+                    android:textSize="50dp" />
+            </GridLayout>
+            <GridLayout
+                android:background="#30DFAE"
+                android:layout_width="match_parent">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/awankecil"
+                    android:layout_margin="20dp"/>
+
+                <TextView
+                    android:layout_marginLeft="70dp"
+                    android:layout_gravity="cen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="13:00"
+                    android:textSize="50dp" />
+            </GridLayout>
+            <GridLayout
+                android:background="#31C79D"
+                android:layout_width="match_parent">
+                <ImageView
+                    android:layout_width="58dp"
+                    android:layout_height="58dp"
+                    android:background="@drawable/awanmendung"
+                    android:layout_margin="20dp"/>
+
+                <TextView
+                    android:layout_marginLeft="70dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="14:00"
+                    android:textSize="50dp" />
+            </GridLayout>
+        </TableLayout>
+    </RelativeLayout>
+
+</LinearLayout>
